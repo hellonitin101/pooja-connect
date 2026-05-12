@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PujaConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        PujaConnect
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#pujas">Pujas</a>
+        </li>
+
+        <li>
+            <a href="#pandits">Pandits</a>
+        </li>
+
+    </ul>
+
+    <div class="nav-buttons">
+
+        <a href="login.html" class="login-btn">
+            User Login
+        </a>
+
+        <a href="register.html" class="register-btn">
+            User Register
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Book Trusted Pandits
+            <br>
+            For Every Puja
+        </h1>
+
+        <p>
+            PujaConnect helps users find verified Pandits
+            for Satyanarayan Katha, Griha Pravesh,
+            Naamkaran, Havan, Mundan and many more rituals.
+        </p>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search by Puja or Location"
+            >
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+        <!-- PANDIT BUTTONS -->
+
+        <div class="pandit-actions">
+
+            <a href="pandit-register.html" class="pandit-register-btn">
+
+                <i class="fas fa-user-plus"></i>
+
+                Register as Pandit
+
+            </a>
+
+            <a href="pandit-login.html" class="pandit-login-btn">
+
+                <i class="fas fa-sign-in-alt"></i>
+
+                Pandit Login
+
+            </a>
+
+        </div>
+
+        <!-- ADMIN BUTTONS -->
+
+        <div class="pandit-actions">
+
+            <a href="admin-register.html" class="pandit-register-btn">
+
+                <i class="fas fa-user-shield"></i>
+
+                Admin Register
+
+            </a>
+
+            <a href="admin-login.html" class="pandit-login-btn">
+
+                <i class="fas fa-lock"></i>
+
+                Admin Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PUJA SECTION
+========================= -->
+
+<section class="puja-section" id="pujas">
+
+    <h2>
+        Popular Pujas
+    </h2>
+
+    <div class="puja-container">
+
+        <div class="puja-card">
+
+            <i class="fas fa-om"></i>
+
+            <h3>Satyanarayan Puja</h3>
+
+            <p>
+                A sacred ritual performed for prosperity,
+                happiness and blessings.
+            </p>
+
+        </div>
+
+        <div class="puja-card">
+
+            <i class="fas fa-fire"></i>
+
+            <h3>Havan</h3>
+
+            <p>
+                Spiritual fire ritual performed for peace,
+                positivity and purification.
+            </p>
+
+        </div>
+
+        <div class="puja-card">
+
+            <i class="fas fa-home"></i>
+
+            <h3>Griha Pravesh</h3>
+
+            <p>
+                Housewarming puja for entering a new home
+                with divine blessings.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PANDIT SECTION
+========================= -->
+
+<section class="pandit-section" id="pandits">
+
+    <h2>
+        Available Pandits
+    </h2>
+
+    <div
+        class="pandit-container"
+        id="panditContainer"
+    >
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        PujaConnect
+    </div>
+
+    <p>
+        Connecting devotees with trusted Pandits
+        across India.
+    </p>
+
+    <div class="social-icons">
+
+        <i class="fab fa-facebook-f"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-twitter"></i>
+
+        <i class="fab fa-youtube"></i>
+
+    </div>
+
+</footer>
+
+<script src="js/pandits.js"></script>
+
+</body>
+</html>

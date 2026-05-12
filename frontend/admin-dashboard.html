@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar">
+
+    <h2>Admin Panel</h2>
+
+    <ul>
+
+      <li>
+
+        <a href="#">
+
+          <i class="fas fa-chart-line"></i>
+
+          Dashboard
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <a href="#usersSection">
+
+          <i class="fas fa-users"></i>
+
+          Users
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <a href="#panditsSection">
+
+          <i class="fas fa-user-tie"></i>
+
+          Pandits
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <a href="#bookingsSection">
+
+          <i class="fas fa-calendar-check"></i>
+
+          Bookings
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <button id="adminLogoutBtn">
+
+          <i class="fas fa-sign-out-alt"></i>
+
+          Logout
+
+        </button>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- CONTENT -->
+
+  <div class="dashboard-content">
+
+    <div class="dashboard-header">
+
+      <h1>
+        Welcome Admin
+      </h1>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="stats-container">
+
+      <div class="stats-card">
+
+        <i class="fas fa-users"></i>
+
+        <h2 id="totalUsers">0</h2>
+
+        <p>Total Users</p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <i class="fas fa-user-tie"></i>
+
+        <h2 id="totalPandits">0</h2>
+
+        <p>Total Pandits</p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <i class="fas fa-calendar-check"></i>
+
+        <h2 id="totalBookings">0</h2>
+
+        <p>Total Bookings</p>
+
+      </div>
+
+    </div>
+
+    <!-- USERS -->
+
+    <div class="admin-section" id="usersSection">
+
+      <h2>All Users</h2>
+
+      <div id="usersContainer"></div>
+
+    </div>
+
+    <!-- PANDITS -->
+
+    <div class="admin-section" id="panditsSection">
+
+      <h2>All Pandits</h2>
+
+      <div id="panditsContainer"></div>
+
+    </div>
+
+    <!-- BOOKINGS -->
+
+    <div class="admin-section" id="bookingsSection">
+
+      <h2>All Bookings</h2>
+
+      <div id="bookingsContainer"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

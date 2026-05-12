@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pandit Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+<!-- DASHBOARD -->
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar">
+
+    <h2>PujaConnect</h2>
+
+    <ul>
+
+      <li>
+
+        <a href="#">
+
+          <i class="fas fa-user"></i>
+
+          Dashboard
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <button id="logoutBtn">
+
+          <i class="fas fa-sign-out-alt"></i>
+
+          Logout
+
+        </button>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+
+  <div class="dashboard-content">
+
+    <!-- HEADER -->
+
+    <div class="dashboard-header">
+
+      <h1>
+
+        Welcome,
+        <span id="panditName"></span>
+
+      </h1>
+
+    </div>
+
+    <!-- PROFILE -->
+
+    <div class="profile-card">
+
+      <h2>Your Profile</h2>
+
+      <div class="profile-details">
+
+        <div>
+
+          <h4>Name</h4>
+
+          <p id="profileName"></p>
+
+        </div>
+
+        <div>
+
+          <h4>Email</h4>
+
+          <p id="profileEmail"></p>
+
+        </div>
+
+        <div>
+
+          <h4>Location</h4>
+
+          <p id="profileLocation"></p>
+
+        </div>
+
+        <div>
+
+          <h4>Experience</h4>
+
+          <p id="profileExperience"></p>
+
+        </div>
+
+        <div>
+
+          <h4>Languages</h4>
+
+          <p id="profileLanguages"></p>
+
+        </div>
+
+        <div>
+
+          <h4>Pricing</h4>
+
+          <p id="profilePricing"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOOKINGS -->
+
+    <div class="booking-section">
+
+      <h2>Booking Requests</h2>
+
+      <div id="bookingContainer">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/pandit-dashboard.js"></script>
+
+</body>
+</html>

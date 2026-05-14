@@ -4,7 +4,7 @@ async function fetchPandits() {
 
   try {
 
-    const response = await fetch("http://localhost:5000/api/pandits");
+    const response = await fetch("https://pooja-connect.onrender.com/api/pandits");
 
     const pandits = await response.json();
 
@@ -165,7 +165,7 @@ bookingForm.addEventListener("submit",async(e)=>{
 
   try {
 
-    const response = await fetch("http://localhost:5000/api/bookings",{
+    const response = await fetch("https://pooja-connect.onrender.com/api/bookings",{
 
       method:"POST",
 

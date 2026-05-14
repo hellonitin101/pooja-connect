@@ -51,7 +51,7 @@ async function fetchBookings(){
 
   try {
 
-    const response = await fetch("http://localhost:5000/api/bookings");
+    const response = await fetch("https://pooja-connect.onrender.com/api/bookings");
 
     const bookings = await response.json();
 
@@ -153,7 +153,7 @@ async function updateBooking(id,status){
 
     const response = await fetch(
 
-      `http://localhost:5000/api/bookings/${id}`,
+      `https://pooja-connect.onrender.com/api/bookings/${id}`,
 
       {
 

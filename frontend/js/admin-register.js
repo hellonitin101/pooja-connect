@@ -21,7 +21,7 @@ adminRegisterForm.addEventListener("submit",async(e)=>{
 
     const response = await fetch(
 
-      "http://localhost:5000/api/auth/register",
+      "https://pooja-connect.onrender.com/api/auth/register",
 
       {
 

@@ -14,7 +14,7 @@ async function fetchUsers(){
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/auth/users"
+      "https://pooja-connect.onrender.com/api/auth/users"
     );
 
     const users = await response.json();
@@ -108,7 +108,7 @@ async function fetchBookings(){
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/bookings"
+      "https://pooja-connect.onrender.com/api/bookings"
     );
 
     const bookings = await response.json();
@@ -165,7 +165,7 @@ async function deleteUser(id){
 
     const response = await fetch(
 
-      `http://localhost:5000/api/auth/users/${id}`,
+      `https://pooja-connect.onrender.com/api/auth/users/${id}`,
 
       {
         method:"DELETE",
